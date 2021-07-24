@@ -1,0 +1,9 @@
+AWSEBSNSTopic:
+  Type: AWS::SNS::Topic
+  Properties: {}
+AWSEBSNSSubscription:
+  Type: AWS::SNS::Subscription
+  Properties:
+    Endpoint: rameshtippana107@gmail.com
+    Protocol: email
+    TopicArn: !Ref 'AWSEBSNSTopic'
